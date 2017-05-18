@@ -8,51 +8,66 @@
 
 <div>
     <h4>Accessory</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+        <hr />
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => Model.Description)</h3>
+                    <p>@Html.DisplayFor(modelItem => Model.Color)</p>
+                    <p>@Html.DisplayFor(modelItem => Model.Season)</p>
+                    <p>@Html.DisplayFor(modelItem => Model.Occasion)</p>
+                    <p>@Html.DisplayFor(modelItem => Model.Photo)</p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+                </div>
+            </div>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+        @*<dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Color)
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Color)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Season)
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Season)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Occasion)
+                    </dt>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                    <dd>
+                        @Html.DisplayFor(model => model.Occasion)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Photo)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Photo)
+                    </dd>
+
+                </dl>
+            </div>*@
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>

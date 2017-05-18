@@ -6,7 +6,31 @@
 
 <h2>Details</h2>
 
-<div>
+
+
+@*I decided to add a wardrobe table to link all of the IDs, but I don't think that I needed it. I wasn't going for 
+    creating outfits, but if I did want to create outfits, I could have used my wardrobe table with the foreign keys of the other
+    tables to create outfits. I can attempt to build outfits later. 
+    <div>
+    <h4>Bottoms</h4>
+    <hr />
+</div>
+
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+            <h3>@Html.DisplayFor(modelItem => Model.Top)</h3>
+            <p><strong>Color: </strong> @Html.DisplayFor(modelItem => Model.Color)</p>
+            <p><strong>Season: </strong> @Html.DisplayFor(modelItem => Model.Season)</p>
+            <p><strong>Occasion: </strong> @Html.DisplayFor(modelItem => Model.Occasion)</p>
+            <p>@Html.DisplayFor(modelItem => Model.Photo)</p>
+
+        </div>
+    </div>
+</div>*@
+
+
+@*<div>
     <h4>Wardrobe</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -47,4 +71,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.WardrobeID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@

@@ -5,8 +5,26 @@
 }
 
 <h2>Details</h2>
-
 <div>
+    <h4>Shoes</h4>
+    <hr />
+</div>
+
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+            <h3>@Html.DisplayFor(modelItem => Model.Description)</h3>
+            <p><strong>Color: </strong> @Html.DisplayFor(modelItem => Model.Color)</p>
+            <p><strong>Season: </strong> @Html.DisplayFor(modelItem => Model.Season)</p>
+            <p><strong>Occasion: </strong> @Html.DisplayFor(modelItem => Model.Occasion)</p>
+            <p>@Html.DisplayFor(modelItem => Model.Photo)</p>
+
+        </div>
+    </div>
+</div>
+
+
+@*<div>
     <h4>Sho</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -55,4 +73,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
